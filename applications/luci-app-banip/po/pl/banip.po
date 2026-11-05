@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-25 02:36+0000\n"
+"PO-Revision-Date: 2026-09-27 19:33+0000\n"
 "Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbanip/pl/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:642
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:711
@@ -683,7 +683,7 @@ msgstr "Liczba dziennika"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:605
 msgid "Log Inbound"
-msgstr "Rejestruj przychodzący"
+msgstr "Rejestruj przychodzące"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:615
 msgid "Log Limit"
@@ -691,11 +691,11 @@ msgstr "Limit dziennika"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:608
 msgid "Log Outbound"
-msgstr "Rejestruj wychodzący"
+msgstr "Rejestruj wychodzące"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:602
 msgid "Log Prerouting"
-msgstr "Rejestrowanie preroutingu"
+msgstr "Rejestruj prerouting"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:221
 msgid "Log Settings"
@@ -755,7 +755,7 @@ msgstr "Poziom nice"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:23
 msgid "No %s related logs yet!"
-msgstr ""
+msgstr "Brak jeszcze dzienników powiązanych z %s!"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:306
 msgid "No GeoIP Map data!"
@@ -1133,6 +1133,8 @@ msgstr "Wybrany priorytet będzie używany do przetwarzania banIP w tle."
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:30
 msgid "The syslog output, pre-filtered for messages related to: %s"
 msgstr ""
+"Dane wyjściowe dziennika systemowego, wstępnie przefiltrowane pod kątem "
+"komunikatów związanych z: %s"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:28
 msgid ""
@@ -1333,7 +1335,7 @@ msgstr "błąd"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:594
 msgid "info"
-msgstr "informacyjny"
+msgstr "info"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:524
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:535
@@ -1353,7 +1355,7 @@ msgstr "lokalna lista zablokowanych"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:17
 msgid "logread not found on system."
-msgstr ""
+msgstr "Nie znaleziono logread w systemie."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:469
 msgid "memory"

@@ -11,10 +11,10 @@ var pkg = {
 		return "pbr";
 	},
 	get LuciCompat() {
-		return 17;
+		return 27;
 	},
 	get ReadmeCompat() {
-		return "1.2.0";
+		return "1.2.2";
 	},
 	get URL() {
 		return (
@@ -44,7 +44,7 @@ var pkg = {
 				: template.format(info || " ")) + "<br />"
 		);
 	},
-	buildGatewayText: function (gw) {
+	buildGatewayText: function (gw, ipv6Enabled) {
 		const gateways = Array.isArray(gw) ? gw : Object.values(gw);
 		const lines = gateways.map((g) => {
 			const iface = g.name;
@@ -57,7 +57,7 @@ var pkg = {
 			const parts = [iface];
 			if (dev_ipv4 && dev_ipv4 !== iface) parts.push(dev_ipv4);
 			if (gw_ipv4) parts.push(gw_ipv4);
-			if (gw_ipv6) {
+			if (ipv6Enabled && gw_ipv6) {
 				if (dev_ipv6 && dev_ipv6 !== iface) parts.push(dev_ipv6);
 				parts.push(gw_ipv6);
 			}
@@ -131,12 +131,61 @@ var RPC = {
 		});
 	},
 	setInitAction: function (name, action) {
-		_setInitAction(name, action).then(
-			function (result) {
-				this.emit("setInitAction", result);
-			}.bind(this)
-		);
+		_setInitAction(name, action)
+			.then(
+				function (result) {
+					this.emit("setInitAction", { result: result, action: action });
+				}.bind(this),
+			)
+			.catch(
+				function (error) {
+					// Even if RPC call fails/times out, emit event to start polling
+					// This handles cases where the backend task starts but RPC times out
+					this.emit("setInitAction", { timeout: true, action: action });
+				}.bind(this),
+			);
 	},
+};
+
+// Poll service status until the expected running state is reached.
+// expectRunning: true for start/restart, false for stop.
+var pollServiceStatus = function (expectRunning, callback) {
+	var maxAttempts = 300; // Max 5 minutes of polling
+	var attempt = 0;
+
+	var checkStatus = function () {
+		attempt++;
+
+		L.resolveDefault(getInitStatus(pkg.Name), {})
+			.then(function (statusData) {
+				var isRunning =
+					statusData && statusData[pkg.Name] && statusData[pkg.Name].running;
+
+				// Check if the expected state has been reached
+				if (expectRunning ? isRunning === true : isRunning !== true) {
+					callback(true);
+				}
+				// Check if timed out
+				else if (attempt >= maxAttempts) {
+					callback(false, "timeout");
+				}
+				// Continue polling
+				else {
+					setTimeout(checkStatus, 1000);
+				}
+			})
+			.catch(function (err) {
+				// Retry on error unless timed out
+				if (attempt < maxAttempts) {
+					setTimeout(checkStatus, 1000);
+				} else {
+					callback(false, "error");
+				}
+			});
+	};
+
+	// Start polling after a delay to give the backend time to start the task
+	setTimeout(checkStatus, 3000);
 };
 
 var status = baseclass.extend({
@@ -250,7 +299,7 @@ var status = baseclass.extend({
 					{ class: "cbi-value-description" },
 					description
 				);
-				text = pkg.buildGatewayText(reply.ubus.gateways);
+				text = pkg.buildGatewayText(reply.ubus.gateways, reply.status.ipv6_enabled);
 				var gatewaysText = E("div", {}, text);
 				var gatewaysField = E("div", { class: "cbi-value-field" }, [
 					gatewaysText,
@@ -286,6 +335,9 @@ var status = baseclass.extend({
 					),
 					warningTorUnsetChainNft: _(
 						"Please unset 'chain' or set 'chain' to 'prerouting' for policy '%s'"
+					),
+					warningInterfaceRoutingUnknownGateway: _(
+						"Unknown Gateway for device '%s'",
 					),
 					warningInvalidOVPNConfig: _(
 						"Invalid OpenVPN config for %s interface"
@@ -323,7 +375,7 @@ var status = baseclass.extend({
 					{ class: "cbi-value-title" },
 					_("Service Warnings")
 				);
-				var text = "";
+				text = "";
 				reply.ubus.warnings.forEach((element) => {
 					if (element.code && warningTable[element.code]) {
 						text += pkg.formatMessage(element.info, warningTable[element.code]);
@@ -332,8 +384,8 @@ var status = baseclass.extend({
 					}
 				});
 				text += _("Warnings encountered, please check the %sREADME%s").format(
-					'<a href="' + pkg.URL + '#WarningMessagesDetails" target="_blank">',
-					"</a>!<br />"
+					'<a href="' + pkg.URL + '#warning-messages-details" target="_blank">',
+					"</a>!<br />",
 				);
 				var warningsText = E("div", { class: "cbi-value-description" }, text);
 				var warningsField = E(
@@ -457,13 +509,31 @@ var status = baseclass.extend({
 						"Failed to create temporary file with mktemp mask: '%s'"
 					),
 					errorSummary: _("Errors encountered, please check %s"),
+					errorNftNetifdFileInstall: _(
+						"Netifd setup: failed to install fw4 netifd nft file '%s'",
+					),
+					errorNftNetifdFileDelete: _(
+						"Netifd setup: failed to delete fw4 netifd nft file '%s'",
+					),
+					errorNetifdMissingOption: _(
+						"Netifd setup: required option '%s' is missing",
+					),
+					errorNetifdInvalidGateway4: _(
+						"Netifd setup: invalid value of netifd_interface_default option '%s'",
+					),
+					errorNetifdInvalidGateway6: _(
+						"Netifd setup: invalid value of netifd_interface_default6 option '%s'",
+					),
+					errorUplinkDown: _(
+						"Uplink/WAN interface is still down, increase value of 'procd_boot_trigger_delay' option",
+					),
 				};
 				var errorsTitle = E(
 					"label",
 					{ class: "cbi-value-title" },
 					_("Service Errors")
 				);
-				var text = "";
+				text = "";
 				reply.ubus.errors.forEach((element) => {
 					if (element.code && errorTable[element.code]) {
 						text += pkg.formatMessage(element.info, errorTable[element.code]);
@@ -472,8 +542,8 @@ var status = baseclass.extend({
 					}
 				});
 				text += _("Errors encountered, please check the %sREADME%s").format(
-					'<a href="' + pkg.URL + '#ErrorMessagesDetails" target="_blank">',
-					"</a>!<br />"
+					'<a href="' + pkg.URL + '#error-messages-details" target="_blank">',
+					"</a>!<br />",
 				);
 				var errorsText = E("div", { class: "cbi-value-description" }, text);
 				var errorsField = E("div", { class: "cbi-value-field" }, errorsText);
@@ -662,8 +732,24 @@ var status = baseclass.extend({
 });
 
 RPC.on("setInitAction", function (reply) {
-	ui.hideModal();
-	location.reload();
+	var action = reply && reply.action;
+	if (action === "start" || action === "restart" || action === "reload") {
+		// Long-running: poll until service is running
+		pollServiceStatus(true, function () {
+			ui.hideModal();
+			location.reload();
+		});
+	} else if (action === "stop") {
+		// Poll until service has stopped
+		pollServiceStatus(false, function () {
+			ui.hideModal();
+			location.reload();
+		});
+	} else {
+		// enable/disable are fast, just reload immediately
+		ui.hideModal();
+		location.reload();
+	}
 });
 
 return L.Class.extend({

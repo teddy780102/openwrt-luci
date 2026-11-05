@@ -1,15 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-07-15 10:11+0000\n"
-"Last-Translator: Stefan Bjornelund the Gnome "
-"<stefan.bjornelund.gnome@gmail.com>\n"
+"PO-Revision-Date: 2026-09-19 14:02+0000\n"
+"Last-Translator: Daniel Nylander <yeagersthlm@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsacme/sv/>\n"
 "Language: sv\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:28
 #: applications/luci-app-acme/root/usr/share/luci/menu.d/luci-app-acme.json:3
@@ -18,15 +17,15 @@ msgstr "ACME-certifikat"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:39
 msgid "ACME global config"
-msgstr "Global konfiguration för ACME"
+msgstr "Global ACME-konfiguration"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:511
 msgid "ACME server URL"
-msgstr "URL för ACME-servern"
+msgstr "ACME-serverns URL"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:42
 msgid "Account email"
-msgstr "E-postkonto"
+msgstr "Kontots e-postadress"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:60
 msgid "Advanced Settings"
@@ -40,7 +39,7 @@ msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:36
 msgid "Cert files are stored in"
-msgstr "Certfiler lagras i"
+msgstr "Certifikatfiler lagras i"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:52
 msgid "Certificate config"
@@ -52,11 +51,11 @@ msgstr "Certifikat"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:455
 msgid "Challenge Alias"
-msgstr "Alias för utmaningen"
+msgstr "Utmaningsalias"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:512
 msgid "Custom ACME server directory URL."
-msgstr "Anpassad URL för katalogen till ACME-servern."
+msgstr "Anpassad URL till ACME-serverns katalog."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:77
 msgid "DNS"
@@ -64,15 +63,15 @@ msgstr "DNS"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:90
 msgid "DNS API"
-msgstr "API för DNS"
+msgstr "DNS-API"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:447
 msgid "DNS API credentials"
-msgstr ""
+msgstr "Autentiseringsuppgifter för DNS-API"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:59
 msgid "DNS Challenge Validation"
-msgstr ""
+msgstr "DNS-utmaningsvalidering"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:518
 msgid "Days until renewal"
@@ -97,8 +96,8 @@ msgid ""
 "must point at the router in the global DNS."
 msgstr ""
 "Domännamn att inkludera i certifikatet. Det första namnet blir subjektnamn. "
-"Efterföljande namn blir alternativa namn. Notera att alla domännamn måste "
-"peka på routern i den globala DNS:en."
+"Efterföljande namn blir alternativa namn. Observera att alla domännamn måste "
+"peka på routern i den globala DNS."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:413
 msgid ""
@@ -122,7 +121,7 @@ msgstr "E-postadress att koppla till kontonyckeln."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:49
 msgid "Enable debug logging"
-msgstr "Aktivera logg för avlusning"
+msgstr "Aktivera felsökningsloggning"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:62
 msgid "Enabled"
@@ -130,27 +129,27 @@ msgstr "Aktiverad"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:57
 msgid "General Settings"
-msgstr "Generella inställningar"
+msgstr "Allmänna inställningar"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:472
 msgid ""
 "Get certificate from the Letsencrypt staging server (use for testing; the "
 "certificate won't be valid)."
 msgstr ""
-"Hämta certifikat från Letsencrypts iscensättningsserver (använd i testsyfte; "
-"certifikatet kommer inte vara giltigt)."
+"Hämta certifikat från Let's Encrypts testserver (används för testning; "
+"certifikatet blir inte giltigt)."
 
 #: applications/luci-app-acme/root/usr/share/rpcd/acl.d/luci-app-acme.json:3
 msgid "Grant UCI access for luci-app-acme"
-msgstr "Bevilja UCI-tillgång till luci-app-acme"
+msgstr "Ge luci-app-acme UCI-åtkomst"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:44
 msgid ""
 "If a certificate wasn't renewed in time then you'll receive a notice at 20 "
 "days before expiry."
 msgstr ""
-"Om ett certifikat inte förnyades i tid så kommer du att få en avisering 20 "
-"dagar före utgångstiden."
+"Om ett certifikat inte förnyas i tid får du en avisering 20 dagar innan det "
+"upphör att gälla."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:607
 msgid "Issued on"
@@ -162,7 +161,7 @@ msgstr "Nyckelstorlek (och typ) för det genererade certifikatet."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:479
 msgid "Key type"
-msgstr "Nyckelstorlek"
+msgstr "Nyckeltyp"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:604
 msgid "Main Domain"
@@ -191,7 +190,7 @@ msgstr "Privat nyckel"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:606
 msgid "Public Certificate"
-msgstr "Publikt certifikat"
+msgstr "Offentligt certifikat"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:482
 msgid "RSA 2048 bits"
@@ -224,10 +223,9 @@ msgid ""
 "certificate. DNS mode will allow you to use the DNS API of your DNS provider "
 "to issue a certificate."
 msgstr ""
-"I fristående läge används den inbyggda webbservern i acme.sh till att "
-"utfärda ett certifikat. Webbrotsläge använder en befintlig webbserver till "
-"att utfärda ett. DNS-lägen tillåter dig att använde din DNS-tjänsts DNS API "
-"för att utfärda ett certifikat."
+"Fristående läge använder den inbyggda webbservern i acme.sh för att utfärda "
+"ett certifikat. Webroot-läge använder en befintlig webbserver. DNS-läge "
+"låter dig använda DNS-leverantörens DNS-API för att utfärda ett certifikat."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:456
 msgid ""
@@ -281,11 +279,11 @@ msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:512
 msgid "Use a custom CA instead of Let's Encrypt."
-msgstr "Använd en anpassad CA istället för Let's Encrypt."
+msgstr "Använd en anpassad CA i stället för Let's Encrypt."
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:470
 msgid "Use staging server"
-msgstr "Använd iscensättningsserver"
+msgstr "Använd testserver"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:71
 msgid "Validation method"
@@ -297,11 +295,11 @@ msgstr "Webbrot"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:58
 msgid "Webroot Challenge Validation"
-msgstr ""
+msgstr "Validering av Webroot-utmaning"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:80
 msgid "Webroot directory"
-msgstr "Webbrotskatalog"
+msgstr "Webroot-katalog"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:81
 msgid ""
@@ -309,3 +307,5 @@ msgid ""
 "Acme in webroot mode. The web server must be accessible from the internet on "
 "port 80."
 msgstr ""
+"Webbserverns rotkatalog. Ange webbserverns dokumentrot för att köra ACME i "
+"Webroot-läge. Webbservern måste vara nåbar från internet på port 80."

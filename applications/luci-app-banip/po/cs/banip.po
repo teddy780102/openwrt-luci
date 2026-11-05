@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-11-05 00:02+0000\n"
+"PO-Revision-Date: 2026-09-28 18:23+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbanip/cs/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:642
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:711
@@ -136,7 +136,7 @@ msgstr "Chyba přihlášení AdGuardHome"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:291
 msgid "Additional trigger delay in seconds before banIP processing begins."
-msgstr "Dodatečné zpoždění v sekundách před začátkem zpracování banIP."
+msgstr "Dodatečné zpoždění (v sekundách) před začátkem zpracování banIP."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:218
 msgid "Advanced Settings"
@@ -260,7 +260,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:342
 msgid "CPU Cores"
-msgstr "Jádra procesoru"
+msgstr "Jader procesoru"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:40
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:123
@@ -375,7 +375,7 @@ msgstr "Parametry stahování"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:296
 msgid "Download Retries"
-msgstr "Opakované pokusy o stažení"
+msgstr "Opakované pokusy o stahování"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:273
 msgid "Download Utility"
@@ -388,7 +388,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:674
 msgid "E-Mail Notification"
-msgstr "Notifikace e-mailem"
+msgstr "Upozornění e-mailem"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:689
 msgid "E-Mail Profile"
@@ -589,7 +589,7 @@ msgstr "Podpora IPv6"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:265
 msgid "Inbound"
-msgstr "Příchozí"
+msgstr "Dovnitř"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:267
 msgid "Inbound & Outbound"
@@ -688,7 +688,7 @@ msgstr "Zaznamenávat příchozí"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:615
 msgid "Log Limit"
-msgstr "Limit záznamu událostí"
+msgstr "Omezení záznamu událostí"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:608
 msgid "Log Outbound"
@@ -752,11 +752,11 @@ msgstr "Síťová zařízení"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:319
 msgid "Nice Level"
-msgstr "Stupeň laskavosti"
+msgstr "Priorita procesu"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:23
 msgid "No %s related logs yet!"
-msgstr ""
+msgstr "Zatím žádné záznamy událostí, související s %s!"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:306
 msgid "No GeoIP Map data!"
@@ -774,9 +774,7 @@ msgstr "Počet pokusů o načtení sady v případě chyby."
 msgid ""
 "Number of download attempts in case of an error (not supported by uclient-"
 "fetch)."
-msgstr ""
-"Počet pokusů o stažení v případě chyby (nepodporováno ze strany uclient-"
-"fetch)."
+msgstr "Počet pokusů o stažení v případě chyby (nepodporováno uclient-fetch)."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:628
 msgid ""
@@ -931,7 +929,7 @@ msgstr "Běhové příznaky"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:193
 msgid "Run Information"
-msgstr "Informace o chodu"
+msgstr "Běhová informace"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:432
 msgid "SYN-Threshold"
@@ -1129,7 +1127,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:30
 msgid "The syslog output, pre-filtered for messages related to: %s"
-msgstr ""
+msgstr "Výstup ze syslog – předfiltrované ohledně zpráv souvisejících s: %s"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:28
 msgid ""
@@ -1329,7 +1327,7 @@ msgstr "chyb"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:594
 msgid "info"
-msgstr "info"
+msgstr "informace"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:524
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:535
@@ -1349,7 +1347,7 @@ msgstr "lokální seznam blokovaných"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:17
 msgid "logread not found on system."
-msgstr ""
+msgstr "nástroj logread nebyl v systému nalezen."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:469
 msgid "memory"

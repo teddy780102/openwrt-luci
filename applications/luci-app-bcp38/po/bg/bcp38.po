@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-14 10:54+0000\n"
-"Last-Translator: Boyan Alexiev <nneauu@gmail.com>\n"
+"PO-Revision-Date: 2026-03-05 17:53+0000\n"
+"Last-Translator: Nikolay Tsanov <nick.tsanov@gmail.com>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbcp38/bg/>\n"
 "Language: bg\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: applications/luci-app-bcp38/htdocs/luci-static/resources/view/bcp38/form.js:41
 msgid "Allowed IP ranges"
@@ -43,7 +43,7 @@ msgstr "Блокирани IP диапазони"
 
 #: applications/luci-app-bcp38/htdocs/luci-static/resources/view/bcp38/form.js:21
 msgid "Enable"
-msgstr "Включване"
+msgstr "Активиране"
 
 #: applications/luci-app-bcp38/root/usr/share/rpcd/acl.d/luci-app-bcp38.json:3
 msgid "Grant UCI access for luci-app-bcp38"
@@ -55,7 +55,7 @@ msgstr "Име на интерфейса"
 
 #: applications/luci-app-bcp38/htdocs/luci-static/resources/view/bcp38/form.js:32
 msgid ""
-"Interface to apply the blocking to should be the upstream WAN interface)."
+"Interface to apply the blocking to (should be the upstream WAN interface)."
 msgstr ""
 "Интерфейсът, към който се прилага блокирането, трябва да бъде възходящият "
 "WAN интерфейс)."
@@ -81,3 +81,9 @@ msgstr ""
 "bcp38\">BCP 38</a>. За IPv6 са инсталирани само маршрути по подразбиране, "
 "специфични за източника, така че не са необходими маршрути на защитната "
 "стена по BCP38."
+
+#~ msgid ""
+#~ "Interface to apply the blocking to should be the upstream WAN interface)."
+#~ msgstr ""
+#~ "Интерфейсът, към който се прилага блокирането, трябва да бъде възходящият "
+#~ "WAN интерфейс)."

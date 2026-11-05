@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-03-01 05:42+0000\n"
-"Last-Translator: Ali Alhialy <ali_d19@yahoo.com>\n"
+"PO-Revision-Date: 2026-07-03 15:29+0000\n"
+"Last-Translator: Develper openmn <devopenm@proton.me>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsattendedsysupgrade/ar/>\n"
 "Language: ar\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 2026.7.1.dev0\n"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:290
 msgid ""
@@ -17,7 +17,7 @@ msgid ""
 "below."
 msgstr ""
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:50
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:42
 msgid "A new %s version of OpenWrt is available:"
 msgstr ""
 
@@ -35,7 +35,7 @@ msgstr "الوضع المتقدم"
 
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/configuration.js:11
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:725
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:54
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:46
 #: applications/luci-app-attendedsysupgrade/root/usr/share/luci/menu.d/luci-app-attendedsysupgrade.json:3
 msgid "Attended Sysupgrade"
 msgstr ""
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Attendedsysupgrade Configuration."
 msgstr ""
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:37
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:29
 msgid "Available"
 msgstr ""
 
@@ -67,9 +67,9 @@ msgstr ""
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:230
 #: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js:632
 msgid "Cancel"
-msgstr "الغاء"
+msgstr "إلغاء"
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:53
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:45
 msgid "Check"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgstr ""
 msgid "Could not reach API at \"%s\". Please try again later."
 msgstr "لم يتم الوصول الى API في \"%s\". الرجاء المحاولة لاحقاً."
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:36
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:28
 msgid "Current"
 msgstr ""
 
@@ -158,7 +158,7 @@ msgstr ""
 msgid "Filesystem"
 msgstr "نظام الملفات"
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:20
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:18
 msgid "Firmware Version"
 msgstr ""
 
@@ -190,15 +190,15 @@ msgstr ""
 msgid "Keep settings and retain the current configuration"
 msgstr ""
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:26
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:20
 msgid "Kernel Version"
 msgstr ""
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:180
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:186
 msgid "Look online for upgrades upon status page load"
 msgstr ""
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:49
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:41
 msgid "New Firmware Available"
 msgstr ""
 
@@ -268,7 +268,7 @@ msgstr ""
 msgid "Request in build queue position %s"
 msgstr ""
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:23
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:19
 msgid "Revision"
 msgstr ""
 
@@ -380,11 +380,11 @@ msgstr ""
 msgid "[installed] %s"
 msgstr ""
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:55
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:47
 msgid "and"
 msgstr ""
 
-#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:56
+#: applications/luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/status/include/11_upgrades.js:48
 msgid "release notes"
 msgstr ""
 

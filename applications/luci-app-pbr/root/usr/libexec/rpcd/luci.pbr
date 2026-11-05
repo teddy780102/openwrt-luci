@@ -12,7 +12,7 @@
 # ubus -S call luci.pbr getGateways '{"name": "pbr" }'
 # ubus -S call luci.pbr getInterfaces '{"name": "pbr" }'
 
-readonly rpcdCompat='17'
+readonly rpcdCompat='27'
 readonly pbrFunctionsFile="${IPKG_INSTROOT}/etc/init.d/pbr"
 if [ -s "$pbrFunctionsFile" ]; then
 # shellcheck source=../../../../../pbr/files/etc/init.d/pbr
@@ -112,6 +112,11 @@ get_init_status() {
 	else
 		json_add_boolean 'running_nft_file' '0'
 	fi
+	if [ "$(uci -q get "${packageName}.config.ipv6_enabled")" = '1' ]; then
+		json_add_boolean 'ipv6_enabled' '1'
+	else
+		json_add_boolean 'ipv6_enabled' '0'
+	fi
 	json_add_string 'version' "$PKG_VERSION"
 	json_add_string 'gateways' "$gateways"
 	json_add_int		'packageCompat'	"${packageCompat:-0}"
@@ -180,8 +185,14 @@ get_gateways() {
 }
 
 get_supported_interfaces() {
-	_build_ifaces_supported() { is_supported_interface "$1" && ! str_contains "$ifacesSupported" "$1" && ifacesSupported="${ifacesSupported}${1} "; }
-	_find_firewall_wan_zone() { [ "$(uci_get 'firewall' "$1" 'name')" = "wan" ] && firewallWanZone="$1"; }
+	_build_ifaces_supported() { 
+		# Skip wan6 interface in split WAN scenarios as it shouldn't be a target for policies
+		if is_split_uplink && is_uplink6 "$1"; then
+			return
+		fi
+		is_supported_interface "$1" && ! str_contains "$ifacesSupported" "$1" && ifacesSupported="${ifacesSupported}${1} "
+	}
+	_find_firewall_wan_zone() { [ "$(uci_get 'firewall' "$1" 'name')" = 'wan' ] && firewallWanZone="$1"; }
 	local i
 	local firewallWanZone
 	local ifacesSupported
@@ -200,13 +211,17 @@ get_supported_interfaces() {
 	config_load 'firewall'
 	config_foreach _find_firewall_wan_zone 'zone'
 	for i in $(uci_get 'firewall' "$firewallWanZone" 'network'); do
-		is_supported_interface "$i" && ! str_contains "$ifacesSupported" "$1" && ifacesSupported="${ifacesSupported}${i} "
+		# Skip wan6 interface in split WAN scenarios as it shouldn't be a target for policies
+		if is_split_uplink && is_uplink6 "$i"; then
+			continue
+		fi
+		is_supported_interface "$i" && ! str_contains "$ifacesSupported" "$i" && ifacesSupported="${ifacesSupported}${i} "
 	done
 	config_load 'network'
 	config_foreach _build_ifaces_supported 'interface'
 	is_tor_running && ifacesSupported="$ifacesSupported tor"
 	for i in $supported_interface; do
-		is_xray "$i" && ifacesSupported="$ifacesSupported $i"
+		str_contains_word "$ifacesSupported" "$i" || ifacesSupported="${ifacesSupported}${i} "
 	done
 	[ "$webui_show_ignore_target" -eq '1' ] && ifacesSupported="$ifacesSupported ignore"
 	json_init

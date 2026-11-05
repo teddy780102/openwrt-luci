@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-06-17 14:41+0000\n"
-"Last-Translator: Максим Горпиніч <maksimgorpinic4@gmail.com>\n"
+"PO-Revision-Date: 2026-10-04 08:24+0000\n"
+"Last-Translator: Karakurt <karakurtspider.s0net@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openwrt/"
 "lucimodulesluci-mod-dashboard/uk/>\n"
 "Language: uk\n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.12.1\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:155
 msgid "Active"
-msgstr "Активне"
+msgstr "Активний"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:317
 msgid "Architecture"
@@ -36,7 +36,7 @@ msgstr "Канал"
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:186
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:226
 msgid "Connected"
-msgstr "Підключений"
+msgstr "Підключено"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:13
 msgid "DHCP Devices"
@@ -52,7 +52,7 @@ msgstr "DNSv6"
 
 #: modules/luci-mod-dashboard/root/usr/share/luci/menu.d/luci-mod-dashboard.json:3
 msgid "Dashboard"
-msgstr "Панелі"
+msgstr "Інформаційна панель"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:129
 msgid "Devices"
@@ -60,11 +60,11 @@ msgstr "Пристрої"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:185
 msgid "Devices Connected"
-msgstr "Пристрої, підключені"
+msgstr "Підключені пристрої"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
 msgid "Down."
-msgstr "Вниз."
+msgstr "Низх."
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:124
 msgid "Download"
@@ -76,27 +76,27 @@ msgstr "Шифрування"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:322
 msgid "Firmware Version"
-msgstr "Версія мікропрограми"
+msgstr "Версія прошивки"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:163
 msgid "GHz"
-msgstr "Ггц"
+msgstr "ГГц"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:210
 msgid "GatewayV4"
-msgstr "Шлюз V4"
+msgstr "GatewayV4"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:256
 msgid "GatewayV6"
-msgstr "Шлюз v6"
+msgstr "GatewayV6"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:25
 msgid "Grant access to DHCP status display"
-msgstr "Надання доступу до відображення стану DHCP"
+msgstr "Надати доступ до відображення стану DHCP"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:12
 msgid "Grant access to main status display"
-msgstr "Надання доступу до основного відображення стану"
+msgstr "Надати доступ до основного відображення стану"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:3
 msgid "Grant access to the system route status"
@@ -110,7 +110,7 @@ msgstr "Надати доступ до відображення статусу �
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:81
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:217
 msgid "Hostname"
-msgstr "Ім'я хосту"
+msgstr "Імʼя вузла"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:41
 msgid "IP Address"
@@ -187,7 +187,7 @@ msgstr "Сила сигналу"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:229
 msgid "Strength"
-msgstr "Сила"
+msgstr "Потужність"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:33
 msgid "System"
@@ -200,7 +200,7 @@ msgstr "Перенесено"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
 msgid "Up."
-msgstr "Вгору."
+msgstr "Висх."
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:119
 msgid "Upload"
@@ -210,7 +210,7 @@ msgstr "Завантажити"
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:232
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:297
 msgid "Uptime"
-msgstr "Час безвідмовної роботи"
+msgstr "Час безперервної роботи"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:9
 msgid "Wireless"

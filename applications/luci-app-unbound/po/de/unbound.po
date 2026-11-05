@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-25 16:28+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2026-09-07 17:15+0000\n"
+"Last-Translator: HerbJul <19JulianHerbst95@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsunbound/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:161
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:53
@@ -41,7 +41,7 @@ msgstr "Die Adblock-Domain-Liste ist zu groß, um in LuCI angezeigt zu werden."
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:47
 msgid "Advanced"
-msgstr "Fortgeschritten"
+msgstr "Erweitert"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:263
 msgid "Aggressive"
@@ -270,7 +270,7 @@ msgstr "Filtere private Rückbindung"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zones.lua:71
 msgid "Forward"
-msgstr "Weiterleitung"
+msgstr "weiterleiten"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:40
 msgid "Forward (simple handoff)"
@@ -425,7 +425,7 @@ msgstr "Lokale Zonen"
 
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:42
 msgid "Log"
-msgstr "Log"
+msgstr "Protokoll"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:58
 msgid "Manual Conf"
@@ -616,7 +616,7 @@ msgstr "Statisch (nur lokal)"
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:48
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:60
 msgid "Statistics"
-msgstr "Statistiken"
+msgstr "Statistik"
 
 #: applications/luci-app-unbound/luasrc/controller/unbound.lua:39
 msgid "Status"

@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 17:57+0200\n"
-"PO-Revision-Date: 2025-09-19 12:10+0000\n"
-"Last-Translator: Phil Jope <Phil.Jope@gmail.com>\n"
+"PO-Revision-Date: 2026-09-08 12:39+0000\n"
+"Last-Translator: HerbJul <19JulianHerbst95@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssamba4/de/>\n"
 "Language: de\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:120
 msgid "Allow guests"
@@ -129,7 +129,7 @@ msgstr "Besitzer Erben"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:34
 msgid "Interface"
-msgstr "Schnittstelle"
+msgstr "Interface"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:35
 msgid "Listen only on the given interface or, if unspecified, on lan"
@@ -144,7 +144,7 @@ msgstr "Name"
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:23
 #: applications/luci-app-samba4/root/usr/share/luci/menu.d/luci-app-samba4.json:3
 msgid "Network Shares"
-msgstr "Netzwerk-freigaben"
+msgstr "Netzwerkfreigaben"
 
 #: applications/luci-app-samba4/htdocs/luci-static/resources/view/samba4.js:62
 msgid ""

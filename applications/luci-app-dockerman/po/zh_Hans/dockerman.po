@@ -1,14 +1,15 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-11-01 11:14+0000\n"
-"Last-Translator: nKsyn <e.nksyn@gmail.com>\n"
+"PO-Revision-Date: 2026-09-28 18:23+0000\n"
+"Last-Translator: Hosted Weblate user 54392 "
+"<hamburger2048@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationsdockerman/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:604
 msgid "A list of kernel capabilities to add to the container"
@@ -16,7 +17,7 @@ msgstr "要添加到容器的内核功能列表"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:183
 msgid "Add"
-msgstr "新增"
+msgstr "添加"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:580
 msgid "Add host device to the container"
@@ -77,7 +78,7 @@ msgstr "块 IO 权重(相对权重)接受10到1000之间的数值"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:589
 msgid ""
 "Block IO weight (relative weight) accepts a weight value between 10 and 1000."
-msgstr "块 IO 权重(相对权重)接受10到1000之间的数值。"
+msgstr "块 IO 权重（相对权重）的有效值为 10 到 1000 之间的数值。"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:51
 msgid "Bridge (Support direct communication between MAC VLANs)"
@@ -122,7 +123,7 @@ msgstr "CPU 共享相对权重，如果设置为 0，则系统将忽略该值并
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:611
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:30
 msgid "CPUs"
-msgstr "线程数量"
+msgstr "CPUs"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/newcontainer_resolve.htm:91
 msgid "Cancel"
@@ -243,7 +244,7 @@ msgstr "设备 (--device)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:388
 msgid "Disconnect"
-msgstr "断开"
+msgstr "断开连接"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:13
 #: applications/luci-app-dockerman/luasrc/view/dockerman/logs.htm:3
@@ -345,7 +346,7 @@ msgstr "示例： https://hub-mirror.c.163.com"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:67
 msgid "Example: tcp://0.0.0.0:2375"
-msgstr "示例：tcp://0.0.0.0:2375"
+msgstr "示例：tcp：//0.0.0.0：2375"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:106
 msgid "Exclude IPs"
@@ -467,7 +468,7 @@ msgstr "信息"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:64
 msgid "Ingress"
-msgstr "入口"
+msgstr "入站"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:65
 msgid ""
@@ -551,7 +552,7 @@ msgid ""
 "Memory limit (format: <number>[<unit>]). Number is a positive integer. Unit "
 "can be one of b, k, m, or g. Minimum is 4M"
 msgstr ""
-"内存限制 (格式:<数字>[<单位>])。数字是正整数。单位可以是 b、k、m 或 g 之一。"
+"内存限制 (格式：<数字>[<单位>])。数字是正整数。单位可以是 b、k、m 或 g 之一。"
 "最小值为 4M"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:582
@@ -704,7 +705,7 @@ msgstr "拉取镜像"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:48
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua:34
 msgid "Registry Mirrors"
-msgstr "注册表镜像"
+msgstr "Registry 镜像"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/configuration.lua:13
 msgid "Remote Endpoint"
@@ -724,7 +725,7 @@ msgstr "远程端口"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:111
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/volumes.lua:108
 msgid "Remove"
-msgstr "移除"
+msgstr "删除"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/images.lua:43
 #: applications/luci-app-dockerman/luasrc/view/dockerman/images_import.htm:82
@@ -807,7 +808,7 @@ msgstr "开始时间"
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:779
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container.htm:5
 msgid "Stats"
-msgstr "状态"
+msgstr "统计"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/container.lua:300
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/containers.lua:128

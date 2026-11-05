@@ -18,6 +18,13 @@ const opkg_info_path    = '/usr/lib/opkg/info';
 
 
 
+function shellquote(value) {
+	if (value == null)
+		value = '';
+
+	return "'" + replace(value, "'", "'\\''") + "'";
+}
+
 function get_dateformat() {
 	return uci.get('ddns', 'global', 'ddns_dateformat') || '%F %R';
 }
@@ -31,7 +38,7 @@ function killcmd(procid, signal) {
 		signal = 0;
 	}
 	// by default, we simply re-nice a process to check it is running
-	return system(`kill -${signal} ${procid}`);
+	return system(['kill', `-${signal}`, procid]);
 }
 
 function trimnonewline(input) {
@@ -39,7 +46,7 @@ function trimnonewline(input) {
 }
 
 function get_date(seconds, format) {
-	return trimnonewline( popen(`date -d @${seconds} "+${format}" 2>/dev/null`, 'r')?.read?.('line') );
+	return trimnonewline( popen(`date -d @${seconds} +${shellquote(format)} 2>/dev/null`, 'r')?.read?.('line') );
 }
 
 // convert epoch date to given format
@@ -134,7 +141,7 @@ const methods = {
 					if (length(dnsServer) > 0) push(command, '-d', dnsServer);
 					push(command, '-- get_registered_ip');
 
-					const result = system(`${join(' ', command)}`);
+					const result = system(command);
 				}
 
 				lastUpdate = int(readfile(`${rundir}/${section}.update`) || 0);

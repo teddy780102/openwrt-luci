@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-25 13:33+0000\n"
+"PO-Revision-Date: 2026-10-08 15:51+0000\n"
 "Last-Translator: Aindriú Mac Giolla Eoin <aindriu80@gmail.com>\n"
 "Language-Team: Irish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbanip/ga/>\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:642
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:711
@@ -262,7 +262,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:342
 msgid "CPU Cores"
-msgstr "Croí LAP"
+msgstr "Croíleacáin LAP"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:40
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:123
@@ -374,11 +374,11 @@ msgstr "Íoslódáil Insecure"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:281
 msgid "Download Parameters"
-msgstr "Paraiméadair Íos"
+msgstr "Paraiméadair Íoslódála"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:296
 msgid "Download Retries"
-msgstr "Íoslódáil Retries"
+msgstr "Íoslódáil Ath-Iarrachtaí"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:273
 msgid "Download Utility"
@@ -390,7 +390,7 @@ msgstr "Buail paicéid go ciúin nó diúltaíonn go gníomhach do thrácht Iste
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:674
 msgid "E-Mail Notification"
-msgstr "Fógra ríomhphoist"
+msgstr "Fógra Ríomhphoist"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:689
 msgid "E-Mail Profile"
@@ -621,7 +621,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:163
 msgid "Information"
-msgstr "Eolas"
+msgstr "Faisnéis"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:216
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:659
@@ -685,7 +685,7 @@ msgstr "Líon Logáil"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:605
 msgid "Log Inbound"
-msgstr "Logáil Isteach"
+msgstr "Logáil ag teacht isteach"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:615
 msgid "Log Limit"
@@ -693,7 +693,7 @@ msgstr "Teorainn Logála"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:608
 msgid "Log Outbound"
-msgstr "Logáil Amach"
+msgstr "Logáil ag teacht isteach amach"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:602
 msgid "Log Prerouting"
@@ -757,7 +757,7 @@ msgstr "Leibhéal Deas"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:23
 msgid "No %s related logs yet!"
-msgstr ""
+msgstr "Níl aon logaí gaolmhara le %s fós!"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:306
 msgid "No GeoIP Map data!"
@@ -776,8 +776,8 @@ msgid ""
 "Number of download attempts in case of an error (not supported by uclient-"
 "fetch)."
 msgstr ""
-"Líon na n-iarrachtaí íoslódála i gcás earráide (nach dtacaíonn uclient-"
-"fetch)."
+"Líon na n-iarrachtaí íoslódála i gcás earráide (ní thacaíonn uclient-fetch "
+"leis seo)."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:628
 msgid ""
@@ -932,7 +932,7 @@ msgstr "Bratacha Rith"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:193
 msgid "Run Information"
-msgstr "Rith Faisnéis"
+msgstr "Faisnéis Rith"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:432
 msgid "SYN-Threshold"
@@ -956,7 +956,7 @@ msgstr "Sábháil agus Athlódáil"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:866
 msgid "Save & Restart"
-msgstr "Sábháil agus Atosaigh"
+msgstr "Sábháil & Atosaigh"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:57
 msgid "Search IP"
@@ -1077,7 +1077,7 @@ msgstr "Stádas"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:852
 msgid "Stop"
-msgstr "Stad"
+msgstr "Stop"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:812
 msgid "Subnet"
@@ -1131,6 +1131,8 @@ msgstr "Úsáidfear an tosaíocht roghnaithe le haghaidh próiseála cúlra BanI
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:30
 msgid "The syslog output, pre-filtered for messages related to: %s"
 msgstr ""
+"An t-aschur syslog, réamh-scagtha le haghaidh teachtaireachtaí a bhaineann "
+"le: %s"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:28
 msgid ""
@@ -1351,7 +1353,7 @@ msgstr "blocliosta áitiúil"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:17
 msgid "logread not found on system."
-msgstr ""
+msgstr "Níor aimsíodh an léamh loga ar an gcóras."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:469
 msgid "memory"

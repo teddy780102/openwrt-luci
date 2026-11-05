@@ -1,26 +1,26 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-07 10:49+0000\n"
-"Last-Translator: Sunggu Choi <dkaost@outlook.com>\n"
+"PO-Revision-Date: 2026-09-19 14:02+0000\n"
+"Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfrps/ko/>\n"
 "Language: ko\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:15
 msgid "Additional configs"
-msgstr ""
+msgstr "추가 설정"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:43
 msgid "Additional settings"
-msgstr ""
+msgstr "추가 설정"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:40
 msgid "Allow ports"
-msgstr ""
+msgstr "허용 포트"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:40
 msgid ""
@@ -42,11 +42,11 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:19
 msgid "Bind address"
-msgstr ""
+msgstr "바인드 주소"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:20
 msgid "Bind port"
-msgstr ""
+msgstr "바인드 포트"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:19
 msgid ""
@@ -76,11 +76,11 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:143
 msgid "Collecting data ..."
-msgstr ""
+msgstr "데이터 수집 중 ..."
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:151
 msgid "Common settings"
-msgstr ""
+msgstr "일반 설정"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:15
 msgid "Config files include in temporary config file"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:39
 msgid "Custom 404 page"
-msgstr ""
+msgstr "사용자 정의 404 페이지"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:39
 msgid ""
@@ -99,19 +99,19 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:27
 msgid "Dashboard address"
-msgstr ""
+msgstr "대시보드 주소"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:30
 msgid "Dashboard password"
-msgstr ""
+msgstr "대시보드 암호"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:28
 msgid "Dashboard port"
-msgstr ""
+msgstr "대시보드 포트"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:29
 msgid "Dashboard user"
-msgstr ""
+msgstr "대시보드 사용자"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:27
 msgid ""
@@ -150,11 +150,11 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:14
 msgid "Environment variable"
-msgstr ""
+msgstr "환경 변수"
 
 #: applications/luci-app-frps/root/usr/share/rpcd/acl.d/luci-app-frps.json:3
 msgid "Grant access to LuCI app frps"
-msgstr ""
+msgstr "LuCI 앱 frps에 접근 권한 부여"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:42
 msgid ""
@@ -169,7 +169,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:22
 msgid "KCP bind port"
-msgstr ""
+msgstr "KCP 바인드 포트"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:32
 msgid "Log file"
@@ -177,7 +177,7 @@ msgstr "로그 파일"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:33
 msgid "Log level"
-msgstr ""
+msgstr "로그 수준"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:34
 msgid "Log max days"
@@ -185,11 +185,11 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:10
 msgid "Log stderr"
-msgstr ""
+msgstr "표준 오류(stderr) 기록"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:9
 msgid "Log stdout"
-msgstr ""
+msgstr "표준 출력(stdout) 기록"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:32
 msgid ""
@@ -214,7 +214,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:41
 msgid "Max ports per client"
-msgstr ""
+msgstr "클라이언트당 최대 포트"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:41
 msgid ""
@@ -225,7 +225,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:118
 msgid "NOT RUNNING"
-msgstr ""
+msgstr "중지됨"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:14
 msgid ""
@@ -235,7 +235,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:23
 msgid "Proxy bind address"
-msgstr ""
+msgstr "프록시 바인드 주소"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:23
 msgid ""
@@ -245,24 +245,24 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:116
 msgid "RUNNING"
-msgstr ""
+msgstr "실행 중"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:13
 msgid "Respawn when crashed"
-msgstr ""
+msgstr "충돌 시 자동 재시작"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:12
 msgid "Run daemon as group"
-msgstr ""
+msgstr "데몬 실행 그룹"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:11
 msgid "Run daemon as user"
-msgstr ""
+msgstr "데몬 실행 사용자"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:152
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:156
 msgid "Startup settings"
-msgstr ""
+msgstr "시작 설정"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:37
 msgid ""
@@ -295,7 +295,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:36
 msgid "Token"
-msgstr ""
+msgstr "토큰"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:36
 msgid ""
@@ -306,7 +306,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:21
 msgid "UDP bind port"
-msgstr ""
+msgstr "UDP 바인드 포트"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:24
 msgid "Vhost HTTP port"
@@ -345,4 +345,4 @@ msgstr ""
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:128
 #: applications/luci-app-frps/root/usr/share/luci/menu.d/luci-app-frps.json:3
 msgid "frp Server"
-msgstr ""
+msgstr "frp 서버"

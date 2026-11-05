@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-08-09 17:23+0000\n"
-"Last-Translator: 안정언 <me@jeongeon.net>\n"
+"PO-Revision-Date: 2026-04-24 15:13+0000\n"
+"Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmosquitto/ko/>\n"
 "Language: ko\n"
@@ -10,11 +10,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:60
 msgid "Allow anonymous connections"
-msgstr ""
+msgstr "익명 접속 허용"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:60
 msgid "Allow to connect without providing a username and password"
@@ -28,19 +28,19 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:179
 msgid "Automatic, but no restarts"
-msgstr ""
+msgstr "자동 (재시작 없음)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:178
 msgid "Automatic, but stopped when not used"
-msgstr ""
+msgstr "자동 (미사용 시 중지)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:177
 msgid "Automatic, includes restarts"
-msgstr ""
+msgstr "자동 (재시작 포함)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:83
 msgid "Autosave interval"
-msgstr ""
+msgstr "자동 저장 간격"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:80
 msgid "Autosave interval applies to change counts instead of time"
@@ -48,23 +48,23 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:80
 msgid "Autosave on changes"
-msgstr ""
+msgstr "변경 시 자동 저장"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:206
 msgid "Bridge PSK"
-msgstr ""
+msgstr "브리지 PSK"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:162
 msgid "Bridge connection states should only be published locally"
-msgstr ""
+msgstr "브리지 연결 상태를 로컬에만 게시합니다"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:139
 msgid "Bridges"
-msgstr ""
+msgstr "브리지"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:109
 msgid "CA file path"
-msgstr ""
+msgstr "CA 파일 경로"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:112
 msgid "CA path to search"
@@ -84,7 +84,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:77
 msgid "Client expiration"
-msgstr ""
+msgstr "클라이언트 만료 기간"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:167
 msgid "Client id to use locally. Important when bridging to yourself"
@@ -96,12 +96,12 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:144
 msgid "Connection name"
-msgstr ""
+msgstr "연결 이름"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:8
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:101
 msgid "Default"
-msgstr ""
+msgstr "기본값"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:122
 msgid "Depends on your openssl version, empty to support all"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:10
 msgid "Disabled"
-msgstr ""
+msgstr "비활성화"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:53
 msgid "Disallow remote access to this broker"
@@ -121,11 +121,11 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:9
 msgid "Enabled"
-msgstr "활성화됨"
+msgstr "활성화"
 
 #: applications/luci-app-mosquitto/root/usr/share/rpcd/acl.d/luci-app-mosquitto.json:3
 msgid "Grant UCI access for luci-app-mosquitto"
-msgstr ""
+msgstr "luci-app-mosquitto의 UCI 접근 권한 부여"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:185
 msgid "How long to wait before disconnecting"
@@ -141,7 +141,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:174
 msgid "How should this bridge be started"
-msgstr ""
+msgstr "브리지 시작 방식"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:203
 msgid "Identity for TLS-PSK"
@@ -163,7 +163,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:118
 msgid "Keyfile (PEM encoded)"
-msgstr ""
+msgstr "키 파일 (PEM 인코딩)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:62
 msgid "Limit for message allowed inflight"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:102
 msgid "MQTT"
-msgstr ""
+msgstr "MQTT"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:62
 msgid "Max Inflight Messages"
@@ -204,11 +204,11 @@ msgstr ""
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:43
 #: applications/luci-app-mosquitto/root/usr/share/luci/menu.d/luci-app-mosquitto.json:3
 msgid "Mosquitto"
-msgstr ""
+msgstr "Mosquitto"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:25
 msgid "Mosquitto MQTT Broker"
-msgstr ""
+msgstr "Mosquitto MQTT 브로커"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:162
 msgid "Notifications local only"
@@ -222,7 +222,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:203
 msgid "PSK Bridge Identity"
-msgstr ""
+msgstr "PSK 브리지 ID"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:136
 msgid "PSK Hint to provide to connecting clients"
@@ -230,7 +230,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:219
 msgid "Path to CA file"
-msgstr ""
+msgstr "CA 파일 경로"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:231
 msgid "Path to PEM encoded keyfile"
@@ -262,7 +262,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:97
 msgid "Port"
-msgstr ""
+msgstr "포트"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:100
 msgid "Protocol to use when listening"
@@ -270,11 +270,11 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:199
 msgid "Remote password"
-msgstr ""
+msgstr "원격 암호"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:196
 msgid "Remote username"
-msgstr ""
+msgstr "원격 사용자 이름"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:77
 msgid ""
@@ -292,7 +292,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:115
 msgid "Server certificate file (PEM encoded)"
-msgstr ""
+msgstr "서버 인증서 파일 (PEM 인코딩)"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:57
 msgid "Set to zero to disable"
@@ -305,7 +305,7 @@ msgstr ""
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:121
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:211
 msgid "TLS Version"
-msgstr ""
+msgstr "TLS 버전"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:212
 msgid ""
@@ -323,7 +323,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:37
 msgid "Use this LuCI configuration page"
-msgstr ""
+msgstr "이 LuCI 설정 페이지 사용"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:103
 msgid "WebSockets"
@@ -343,7 +343,7 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:147
 msgid "address"
-msgstr ""
+msgstr "주소"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:147
 msgid "address[:port] of remote broker"
@@ -373,11 +373,11 @@ msgstr ""
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:156
 msgid "notifications"
-msgstr ""
+msgstr "알림"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:150
 msgid "topic"
-msgstr ""
+msgstr "토픽"
 
 #: applications/luci-app-mosquitto/htdocs/luci-static/resources/view/mosquitto/mosquitto.js:145
 msgid "unique name for this bridge configuration"

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-10-25 13:32+0000\n"
-"Last-Translator: 大王叫我来巡山 "
+"PO-Revision-Date: 2026-09-28 18:23+0000\n"
+"Last-Translator: Hosted Weblate user 54392 "
 "<hamburger2048@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationsclamav/zh_Hans/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav.js:248
 msgid "150M"
@@ -64,7 +64,7 @@ msgstr "检测到加密的归档文件时发出警报"
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:151
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:157
 msgid "Basic"
-msgstr "基本"
+msgstr "基础"
 
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:64
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:72
@@ -296,7 +296,7 @@ msgstr "Milter 套接字组"
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/freshclam.js:178
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/freshclam.js:183
 msgid "No"
-msgstr "否"
+msgstr "不"
 
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/freshclam.js:106
 msgid "Notify clamd"

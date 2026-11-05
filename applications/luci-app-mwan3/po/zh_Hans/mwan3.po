@@ -3,15 +3,16 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-11-05 00:02+0000\n"
-"Last-Translator: nKsyn <e.nksyn@gmail.com>\n"
+"PO-Revision-Date: 2026-09-28 18:23+0000\n"
+"Last-Translator: Hosted Weblate user 54392 "
+"<hamburger2048@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationsmwan3/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:211
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:227
@@ -70,7 +71,8 @@ msgstr "%d 秒"
 msgid ""
 "%s: Name of Physical device which interface went up or down (e.g. \"eth0\" "
 "or \"wwan0\")"
-msgstr "%s:接口状态变化时（up/down）对应的物理设备名称（如 'eth0' 或 'wwan0'）"
+msgstr ""
+"%s：接口状态变化时（up/down）对应的物理设备名称（如 'eth0' 或 'wwan0'）"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:39
 msgid "%s: Name of the action that triggered this event"
@@ -79,7 +81,7 @@ msgstr "%s：触发此事件的操作名称"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:44
 msgid ""
 "%s: Name of the interface which went up or down (e.g. \"wan\" or \"wwan\")"
-msgstr "%s:发生状态变化（up/down）的接口名称（例如：\"wan\" 或 \"wwan\"）"
+msgstr "%s：发生状态变化（up/down）的接口名称（例如：\"wan\" 或 \"wwan\"）"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:40
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:41
@@ -189,7 +191,7 @@ msgstr "启用 SSL 跟踪"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:55
 msgid "Enabled"
-msgstr "启用"
+msgstr "已启用"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:118
 msgid ""
@@ -370,8 +372,8 @@ msgid ""
 "May be entered as a single or multiple port(s) (eg \"22\" or \"80,443\") or "
 "as a portrange (eg \"1024:2048\") without quotes"
 msgstr ""
-"可以输入一个或多个端口（例如“22”或“80,443”），亦或是一个端口范围（例"
-"如“1024:2048”），不含引号"
+"可以输入一个或多个端口（例如“22”或“80,443”），亦或是一个端口范围（例如“1024："
+"2048”），不含引号"
 
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:72
 msgid "Member"
@@ -463,7 +465,7 @@ msgstr "Mwan3 要求每个接口都在 /etc/config/network 文件中配置了唯
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:48
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:53
 msgid "Name length shall not exceed 15 characters"
-msgstr "名称长度不得超过15个字符"
+msgstr "名称长度不得超过 15 个字符"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:108
 msgid ""
@@ -489,11 +491,11 @@ msgstr "名称最多15个字符。"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:23
 msgid "Names must match the interface name found in /etc/config/network."
-msgstr "名称必须与 /etc/config/network 中找到的接口名称匹配。"
+msgstr "名称必须与 /etc/config/network 中的接口名称一致。"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:98
 msgid "No"
-msgstr "否"
+msgstr "不"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:21
 msgid "No MWAN interfaces found"
@@ -651,7 +653,7 @@ msgstr "规则指定哪些流量将使用特定的 MWAN 策略。"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:102
 msgid "Seconds. Acceptable values: 1-1000000. Defaults to 600 if not set"
-msgstr "单位为秒。范围: 1-1000000。默认值 600 秒"
+msgstr "单位为秒。范围：1-1000000。默认值 600 秒"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:76
 msgid "Source address"
@@ -769,7 +771,7 @@ msgstr "无法保存内容：%s"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:43
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:56
 msgid "Uptime"
-msgstr "运行时间"
+msgstr "已运行时长"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:67
 msgid "View the content of /etc/protocols for protocol description"
@@ -778,6 +780,10 @@ msgstr "详细请查看 /etc/protocols 中的协议描述"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:29
 msgid "Warning"
 msgstr "警告"
+
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:61
+msgid "Weight"
+msgstr "权重"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:62
 msgid ""

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-09-07 21:06+0000\n"
-"Last-Translator: brodrigueznu <brodrigueznu@hotmail.com>\n"
+"PO-Revision-Date: 2026-08-24 16:47+0000\n"
+"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmwan3/es/>\n"
 "Language: es\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:211
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:227
@@ -71,8 +71,8 @@ msgid ""
 "%s: Name of Physical device which interface went up or down (e.g. \"eth0\" "
 "or \"wwan0\")"
 msgstr ""
-"%s: nombre del dispositivo físico cuya interfaz subió o bajó (p. ej., "
-"\"eth0\" o \"wwan0\")"
+"%s: nombre del dispositivo físico cuya interfaz subió o bajó (p. ej., «eth0» "
+"o «wwan0»)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:39
 msgid "%s: Name of the action that triggered this event"
@@ -81,8 +81,7 @@ msgstr "%s: nombre de la acción que desencadenó este evento"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:44
 msgid ""
 "%s: Name of the interface which went up or down (e.g. \"wan\" or \"wwan\")"
-msgstr ""
-"%s: nombre de la interfaz que subió o bajó (p. ej., \"wan\" o \"wwan\")"
+msgstr "%s: nombre de la interfaz que subió o bajó (p. ej., «wan» o «wwan»)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:40
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:41
@@ -146,7 +145,7 @@ msgstr "Ver tabla de enrutamiento"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:96
 msgid "Collecting data ..."
-msgstr "Recopilando los datos..."
+msgstr "Recopilando datos..."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:18
 msgid "Contents have been saved."
@@ -158,7 +157,7 @@ msgstr "Crítico"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:32
 msgid "Debug"
-msgstr "Depurar"
+msgstr "Depuración"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:85
 msgid "Destination address"
@@ -304,7 +303,7 @@ msgstr "Solo IPv6"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:31
 msgid "Info"
-msgstr "Info"
+msgstr "Informe"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:58
 msgid "Initial state"
@@ -374,7 +373,7 @@ msgstr ""
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:19
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:117
 msgid "Logging"
-msgstr "Registrar eventos"
+msgstr "Registro"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:22
 msgid "Loglevel"
@@ -390,8 +389,8 @@ msgid ""
 "May be entered as a single or multiple port(s) (eg \"22\" or \"80,443\") or "
 "as a portrange (eg \"1024:2048\") without quotes"
 msgstr ""
-"Puede ingresarse como uno o varios puertos (por ejemplo, \"22\" o "
-"\"80,443\") o como un puerto (por ejemplo, \"1024:2048\") sin comillas"
+"Puede ingresarse como uno o varios puertos (por ejemplo, «22» o «80,443») o "
+"como un puerto (por ejemplo, «1024:2048») sin comillas"
 
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:72
 msgid "Member"
@@ -490,7 +489,7 @@ msgstr ""
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:48
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:53
 msgid "Name length shall not exceed 15 characters"
-msgstr "La longitud del nombre no debe superar los 15 caracteres"
+msgstr "La longitud del nombre no debe exceder los 15 caracteres"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:108
 msgid ""
@@ -498,7 +497,7 @@ msgid ""
 "youtube.com/youtube\")"
 msgstr ""
 "Nombre de la regla IPset. Requiere la regla de IPset en /etc/dnsmasq.conf "
-"(por ejemplo, \"ipset=/youtube.com/youtube\")"
+"(por ejemplo, «ipset=/youtube.com/youtube»)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:24
 msgid "Names may contain characters A-Z, a-z, 0-9, _ and no spaces-"
@@ -545,7 +544,7 @@ msgstr "Notas:"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:30
 msgid "Notice"
-msgstr "Aviso"
+msgstr "Nota"
 
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:96
 msgid "Notify"
@@ -555,13 +554,13 @@ msgstr "Notificar"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:38
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:46
 msgid "Offline"
-msgstr "Desconectado"
+msgstr "Fuera de línea"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:61
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:31
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:40
 msgid "Online"
-msgstr "Conectado"
+msgstr "En línea"
 
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:13
 msgid "Overview"
@@ -718,8 +717,7 @@ msgstr "Tiempo de espera pegajoso"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:77
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:86
 msgid "Supports CIDR notation (eg \"192.168.100.0/24\") without quotes"
-msgstr ""
-"Admite la notación CIDR (por ejemplo, \"192.168.100.0/24\") sin comillas"
+msgstr "Admite la notación CIDR (por ejemplo, «192.168.100.0/24») sin comillas"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:91
 msgid "Task"
@@ -761,7 +759,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:28
 msgid "This section allows you to modify the content of \"/etc/mwan3.user\"."
-msgstr "Esta sección le permite modificar el contenido de \"/etc/mwan3.user\"."
+msgstr "Esta sección le permite modificar el contenido de «/etc/mwan3.user»."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:71
 msgid "Tracking hostname or IP address"
@@ -828,6 +826,10 @@ msgstr "Ver el contenido de /etc/protocol para la descripción del protocolo"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:29
 msgid "Warning"
 msgstr "Advertencia"
+
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:61
+msgid "Weight"
+msgstr "Peso"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:62
 msgid ""

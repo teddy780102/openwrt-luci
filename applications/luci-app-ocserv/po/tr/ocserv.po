@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-09-08 17:09+0000\n"
-"Last-Translator: Derman <mole.qnap@gmail.com>\n"
+"PO-Revision-Date: 2026-09-29 17:59+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsocserv/tr/>\n"
 "Language: tr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:124
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:80
@@ -63,7 +63,7 @@ msgstr "Ölü eş algılama süresi (saniye)"
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/users.lua:70
 #: applications/luci-app-ocserv/luasrc/view/ocserv_status.htm:55
 msgid "Device"
-msgstr "Cihaz"
+msgstr "Aygıt"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:14
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:14
@@ -176,7 +176,7 @@ msgstr "Parola"
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:56
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:50
 msgid "Port"
-msgstr "Bağlantı Noktası"
+msgstr "Bağlantı noktası"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:62
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/user-config.lua:56
@@ -225,7 +225,7 @@ msgid ""
 "Typically you should include the address of this device"
 msgstr ""
 "İstemcilere sağlanacak DNS sunucuları; IPv6 veya IPv4 olabilir. Genellikle "
-"bu cihazın adresini eklemelisiniz"
+"bu aygıtın adresini eklemelisiniz"
 
 #: applications/luci-app-ocserv/luasrc/model/cbi/ocserv/main.lua:111
 msgid ""

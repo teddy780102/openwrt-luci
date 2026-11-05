@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-11-08 10:06+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2026-09-08 12:39+0000\n"
+"Last-Translator: HerbJul <19JulianHerbst95@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationskeepalived/de/>\n"
 "Language: de\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15-dev\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:205
 msgid "2"
@@ -92,7 +92,7 @@ msgstr "Priorität der Skriptausführung anpassen"
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:26
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:300
 msgid "Advanced"
-msgstr "Erweiterte"
+msgstr "Erweitert"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:64
 msgid "Allows the lower priority machine to maintain the master role,"
@@ -109,7 +109,7 @@ msgstr ""
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:27
 msgid "Backup"
-msgstr "Sicherung"
+msgstr "Backup"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:57
 msgid "Blackhole"
@@ -459,7 +459,7 @@ msgstr ""
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:31
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/status/include/35_keepalived.js:30
 msgid "Interface"
-msgstr "Schnittstelle"
+msgstr "Interface"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/vrrp_instance.js:32
 msgid "Interface for inside_network, bound by VRRP"
@@ -517,7 +517,7 @@ msgstr "Liste von Routenobjekten"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:54
 msgid "Main"
-msgstr "Main"
+msgstr "Haupt"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/servers.js:48
 msgid "Mark"
@@ -844,7 +844,7 @@ msgstr "Sorry Server Port"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:39
 msgid "Source Address"
-msgstr "Quelle Adresse"
+msgstr "Quelladresse"
 
 #: applications/luci-app-keepalived/htdocs/luci-static/resources/view/keepalived/route.js:40
 msgid "Source Address of the Route"

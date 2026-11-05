@@ -706,9 +706,9 @@ return view.extend({
 			let hint;
 
 			if (name && ipv4 && ipv6)
-				hint = `${name} <span class="hide-xs">(${ipv4}, ${ipv6})</span>`;
+				hint = `${'%h'.format(name)} <span class="hide-xs">(${ipv4}, ${ipv6})</span>`;
 			else if (name && (ipv4 ?? ipv6))
-				hint = `${name} <span class="hide-xs">(${ipv4 || ipv6})</span>`;
+				hint = `${'%h'.format(name)} <span class="hide-xs">(${ipv4 || ipv6})</span>`;
 			else
 				hint = name || ipv4 || ipv6 || '?';
 
@@ -1324,6 +1324,7 @@ return view.extend({
 
 
 				const crypto_modes = [];
+				const is_6ghz = uci.get('wireless', radioNet.getWifiDeviceName(), 'band') == '6g';
 
 				if (hwtype == 'mac80211') {
 					const has_supplicant = L.hasSystemFeature('wpasupplicant');
@@ -1350,9 +1351,11 @@ return view.extend({
 					const has_sta_wep = L.hasSystemFeature('wpasupplicant', 'wep');
 
 					if (has_hostapd || has_supplicant) {
-						crypto_modes.push(['psk2',      'WPA2-PSK',                    35]);
-						crypto_modes.push(['psk-mixed', 'WPA-PSK/WPA2-PSK Mixed Mode', 22]);
-						crypto_modes.push(['psk',       'WPA-PSK',                     12]);
+						if (!is_6ghz) {
+							crypto_modes.push(['psk2',      'WPA2-PSK',                    35]);
+							crypto_modes.push(['psk-mixed', 'WPA-PSK/WPA2-PSK Mixed Mode', 22]);
+							crypto_modes.push(['psk',       'WPA-PSK',                     12]);
+						}
 					}
 					else {
 						encr.description = _('WPA-Encryption requires wpa_supplicant (for client mode) or hostapd (for AP and ad-hoc mode) to be installed.');
@@ -1360,10 +1363,11 @@ return view.extend({
 
 					if (has_ap_sae || has_sta_sae) {
 						crypto_modes.push(['sae',       'WPA3-SAE',                     31]);
-						crypto_modes.push(['sae-mixed', 'WPA2-PSK/WPA3-SAE Mixed Mode', 30]);
+						if (!is_6ghz)
+							crypto_modes.push(['sae-mixed', 'WPA2-PSK/WPA3-SAE Mixed Mode', 30]);
 					}
 
-					if (has_ap_wep || has_sta_wep) {
+					if (!is_6ghz && (has_ap_wep || has_sta_wep)) {
 						crypto_modes.push(['wep-open',   _('WEP Open System'), 11]);
 						crypto_modes.push(['wep-shared', _('WEP Shared Key'),  10]);
 					}
@@ -1371,12 +1375,15 @@ return view.extend({
 					if (has_ap_eap || has_sta_eap) {
 						if (has_ap_eap192 || has_sta_eap192) {
 							crypto_modes.push(['wpa3', 'WPA3-EAP', 33]);
-							crypto_modes.push(['wpa3-mixed', 'WPA2-EAP/WPA3-EAP Mixed Mode', 32]);
+							if (!is_6ghz)
+								crypto_modes.push(['wpa3-mixed', 'WPA2-EAP/WPA3-EAP Mixed Mode', 32]);
 							crypto_modes.push(['wpa3-192', 'WPA3-EAP 192-bit Mode', 36]);
 						}
 
-						crypto_modes.push(['wpa2', 'WPA2-EAP', 34]);
-						crypto_modes.push(['wpa',  'WPA-EAP',  20]);
+						if (!is_6ghz) {
+							crypto_modes.push(['wpa2', 'WPA2-EAP', 34]);
+							crypto_modes.push(['wpa',  'WPA-EAP',  20]);
+						}
 					}
 
 					if (has_ap_owe || has_sta_owe) {
@@ -1460,7 +1467,8 @@ return view.extend({
 					crypto_modes.push(['wep-shared', _('WEP Shared Key'),         10]);
 				}
 
-				crypto_modes.push(['none',       _('No Encryption'),   0]);
+				if (!is_6ghz)
+					crypto_modes.push(['none',       _('No Encryption'),   0]);
 
 				crypto_modes.sort(function(a, b) { return b[2] - a[2]; });
 
@@ -2038,10 +2046,11 @@ return view.extend({
 					const qm = res?.quality_max ?? 0;
 					const q = (qv > 0 && qm > 0) ? Math.floor((100 / qm) * qv) : 0;
 					const s = res.stale ? 'opacity:0.5' : '';
+					const ssid = (typeof res.ssid === 'string' && res.ssid.length > 0) ? document.createTextNode(`${res?.ssid}`) : null;
 
 					rows.push([
 						E('span', { 'style': s }, render_signal_badge(q, res?.signal, res?.noise)),
-						E('span', { 'style': s }, (typeof res.ssid === 'string' && res.ssid.length > 0) ? `${res?.ssid}` : E('em', _('hidden'))),
+						E('span', { 'style': s }, ssid ?? E('em', _('hidden'))),
 						E('span', { 'style': s }, `${res?.channel}`),
 						E('span', { 'style': s }, `${res?.mode}`),
 						E('span', { 'style': s }, `${res?.bssid}`),
@@ -2148,7 +2157,7 @@ return view.extend({
 					uci.set('wireless', radioDev.getName(), 'htmode', 'HT'+w);
 				}
 				else {
-					uci.remove('wireless', radioDev.getName(), 'htmode');
+					uci.unset('wireless', radioDev.getName(), 'htmode');
 				}
 
 				uci.set('wireless', radioDev.getName(), 'channel', bss.channel);

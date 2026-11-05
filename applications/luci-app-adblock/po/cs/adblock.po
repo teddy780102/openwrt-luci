@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-11-05 00:02+0000\n"
+"PO-Revision-Date: 2026-09-28 18:23+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/cs/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:302
 msgid "-- default --"
@@ -48,7 +48,7 @@ msgstr "Aktivní kanály"
 
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:3
 msgid "Adblock"
-msgstr "Blokování reklamy Adblock"
+msgstr "Adblock"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:47
 msgid "Add Allowlist Domain"
@@ -73,7 +73,7 @@ msgstr "Další nastavení"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:229
 msgid "Additional trigger delay in seconds before adblock processing begins."
 msgstr ""
-"Dodatečné zpoždění v sekundách před začátkem zpracování blokování reklamy."
+"Dodatečné zpoždění (v sekundách) před začátkem zpracování blokování reklamy."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:208
 msgid "Advanced DNS Settings"
@@ -314,7 +314,7 @@ msgstr "Nástroj pro stahování"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:275
 msgid "E-Mail Notification"
-msgstr "Notifikace e-mailem"
+msgstr "Upozornění e-mailem"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:450
 msgid "E-Mail Profile"
@@ -567,11 +567,11 @@ msgstr "Střední"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:295
 msgid "Nice Level"
-msgstr ""
+msgstr "Priorita procesu"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logtemplate.js:23
 msgid "No %s related logs yet!"
-msgstr ""
+msgstr "Zatím žádné záznamy událostí, související s %s!"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:400
 msgid "No GeoIP Map data!"
@@ -818,7 +818,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logtemplate.js:30
 msgid "The syslog output, pre-filtered for messages related to: %s"
-msgstr ""
+msgstr "Výstup ze syslog – předfiltrované ohledně zpráv souvisejících s: %s"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:253
 msgid ""
@@ -958,7 +958,7 @@ msgstr "kresd"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logtemplate.js:17
 msgid "logread not found on system."
-msgstr ""
+msgstr "nástroj logread nebyl v systému nalezen."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:164
 msgid "max. result set size"

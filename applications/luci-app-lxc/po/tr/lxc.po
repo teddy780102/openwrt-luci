@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-09-08 17:09+0000\n"
-"Last-Translator: Derman <mole.qnap@gmail.com>\n"
+"PO-Revision-Date: 2026-08-31 19:36+0000\n"
+"Last-Translator: Martin Olmer <m_iv@seznam.cz>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationslxc/tr/>\n"
 "Language: tr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:18
 msgid ""
@@ -21,7 +21,7 @@ msgstr ""
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:29
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:47
 msgid "Actions"
-msgstr "İşlemler"
+msgstr "Aksiyonlar"
 
 #: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:19
 msgid "Also you may want to install 'kmod-veth' for optional network support."
@@ -101,7 +101,7 @@ msgstr "Durum"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:131
 msgid "Stop"
-msgstr "Dur"
+msgstr "Durdur"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:46
 msgid "Template"

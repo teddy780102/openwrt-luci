@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-07-03 10:09+0000\n"
-"Last-Translator: moreno <morenomatassini95@gmail.com>\n"
+"PO-Revision-Date: 2026-04-01 11:14+0000\n"
+"Last-Translator: Random <random-r@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsunbound/it/>\n"
 "Language: it\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:161
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:53
@@ -43,7 +43,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:47
 msgid "Advanced"
-msgstr "Avanzate"
+msgstr "Avanzato"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:263
 msgid "Aggressive"
@@ -565,7 +565,7 @@ msgstr "Salva"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:68
 msgid "Server Port"
-msgstr ""
+msgstr "Porta del Server"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:74
 msgid "Server TLS Port"

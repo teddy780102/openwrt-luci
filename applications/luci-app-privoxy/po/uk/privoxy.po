@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-07-22 08:16+0000\n"
-"Last-Translator: Максим Горпиніч <gorpinicmaksim5@gmail.com>\n"
+"PO-Revision-Date: 2026-07-08 15:16+0000\n"
+"Last-Translator: Dan <jonweblin2205@protonmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsprivoxy/uk/>\n"
 "Language: uk\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 2026.7.1.dev0\n"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:236
 msgid ""
@@ -121,7 +121,7 @@ msgstr "Під час затримки ifup-події не відстежуют
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:599
 msgid "Enable proxy authentication forwarding"
-msgstr "Увімкнути переадресацію автентифікації проксі"
+msgstr "Увімкнути пересилання автентифікації проксі"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:135
 msgid ""
@@ -143,8 +143,8 @@ msgid ""
 "Enabling this option is NOT recommended if there is no parent proxy that "
 "requires authentication!"
 msgstr ""
-"Вмикати цю опцію НЕ рекомендується, якщо немає батьківського проксі-сервера, "
-"який вимагає автентифікації!"
+"Вмикати цей параметр НЕ рекомендується за відсутності батьківського проксі-"
+"сервера, що вимагає автентифікації!"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:368
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:404
@@ -172,7 +172,7 @@ msgstr "Пересилання"
 
 #: applications/luci-app-privoxy/root/usr/share/rpcd/acl.d/luci-app-privoxy.json:3
 msgid "Grant UCI access for luci-app-privoxy"
-msgstr "Надайте доступ UCI для luci-app-privoxy"
+msgstr "Надати доступ до UCI для luci-app-privoxy"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:589
 msgid ""
@@ -188,9 +188,9 @@ msgid ""
 "be a good idea to let them know how to reach you, what you block and why you "
 "do that, your policies, etc."
 msgstr ""
-"Якщо ви маєте намір використовувати Privoxy для більшої кількості "
-"користувачів, а не лише для себе, було б гарною ідеєю повідомити їм, як з "
-"вами зв’язатися, що ви блокуєте та чому це робите, свою політику тощо."
+"Якщо Privoxy використовується не лише для себе, а й для інших користувачів, "
+"варто повідомити їх, як з вами звʼязатися, що блокується та чому, які "
+"політики застосовуються тощо."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:215
 msgid "Invalid email address"
@@ -210,31 +210,30 @@ msgstr "Перегляд файлів журналу"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:899
 msgid "Log all data read from the network"
-msgstr "Реєструвати всі дані, зчитані з мережі"
+msgstr "Журналювати всі дані, зчитані з мережі"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:831
 msgid "Log all data written to the network"
-msgstr "Реєструвати всі дані, записані в мережу"
+msgstr "Журналювати всі дані, записані в мережу"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:905
 msgid "Log the applying actions"
-msgstr "Зареєструвати дії із застосування"
+msgstr "Журналювати застосовувані дії"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:807
 msgid ""
 "Log the destination for each request Privoxy let through. See also 'Debug "
 "1024'."
 msgstr ""
-"Реєструйте призначення для кожного запиту, який пропускає Privoxy. Дивіться "
-"також «Debug 1024»."
+"Журналювати призначення для кожного запиту, пропущеного Privoxy. Див. також "
+"«Debug 1024»."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:867
 msgid ""
 "Log the destination for requests Privoxy didn't let through, and the reason "
 "why."
 msgstr ""
-"Зареєструйте місце призначення для запитів, які не пропустив Privoxy, і "
-"причину."
+"Журналювати призначення для запитів, не пропущених Privoxy, та причину."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:104
 msgid "Logging"
@@ -255,7 +254,7 @@ msgstr "Обов'язкове введення: каталог не надано
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:279
 msgid "Mandatory Input: No File given!"
-msgstr "Обов’язкове введення: файл не надано!"
+msgstr "Обовʼязкове введення: файл не надано!"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:479
 msgid "Mandatory Input: No Port given!"
@@ -304,19 +303,20 @@ msgstr "Без кінцевих '/', будь ласка."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:885
 msgid "Non-fatal errors - *we highly recommended enabling this*"
-msgstr "Нефатальні помилки - *настійно рекомендуємо ввімкнути це*"
+msgstr "Нефатальні помилки — *настійно рекомендується вмикати*"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:718
 msgid ""
 "Number of seconds after which a socket times out if no data is received."
 msgstr ""
-"Кількість секунд, після якої сокет закінчується, якщо дані не отримано."
+"Кількість секунд, після якої вичерпується час очікування сокета, якщо дані "
+"не отримано."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:672
 msgid ""
 "Number of seconds after which an open connection will no longer be reused."
 msgstr ""
-"Кількість секунд, після якої відкрите з’єднання більше не "
+"Кількість секунд, після якої відкрите зʼєднання більше не "
 "використовуватиметься повторно."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:327
@@ -337,7 +337,7 @@ msgstr "Натисніть кнопку [Читати]"
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:518
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:527
 msgid "Please read Privoxy manual for details!"
-msgstr "Будь ласка, прочитайте інструкцію Privoxy, щоб дізнатися більше!"
+msgstr "Докладніше — у посібнику Privoxy."
 
 #: applications/luci-app-privoxy/luasrc/controller/privoxy.lua:92
 msgid "Please update to the current version!"
@@ -345,7 +345,7 @@ msgstr "Будь ласка, оновіть до поточної версії!"
 
 #: applications/luci-app-privoxy/luasrc/controller/privoxy.lua:24
 msgid "Privoxy WEB proxy"
-msgstr "Privoxy WEB проксі"
+msgstr "Вебпроксі Privoxy"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:76
 msgid ""
@@ -353,9 +353,9 @@ msgid ""
 "configuration, help and logging. This section of the configuration file "
 "tells Privoxy where to find those other files."
 msgstr ""
-"Privoxy може (і зазвичай використовує) використовувати низку інших файлів "
-"для додаткової конфігурації, довідки та журналювання. Цей розділ "
-"конфігураційного файлу повідомляє Privoxy, де знайти ці інші файли."
+"Privoxy може (і зазвичай використовує) низку інших файлів для додаткової "
+"конфігурації, довідки та журналювання. Цей розділ файлу конфігурації вказує "
+"Privoxy, де знайти ці інші файли."
 
 #: applications/luci-app-privoxy/luasrc/controller/privoxy.lua:32
 msgid ""
@@ -377,7 +377,7 @@ msgstr "Показати стан введення/виведення"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:813
 msgid "Show each connection status"
-msgstr "Показати статус кожного з’єднання"
+msgstr "Показати стан кожного підключення"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:825
 msgid "Show header parsing"
@@ -438,7 +438,7 @@ msgstr ""
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:453
 msgid ""
 "The address and TCP port on which Privoxy will listen for client requests."
-msgstr "Адреса та TCP-порт, на якому Privoxy слухатиме запити клієнта."
+msgstr "Адреса та TCP-порт, на яких Privoxy прослуховуватиме запити клієнтів."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:770
 msgid ""
@@ -469,11 +469,11 @@ msgstr ""
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:183
 msgid "The hostname shown on the CGI pages."
-msgstr "Ім'я хоста, яке відображається на сторінках CGI."
+msgstr "Імʼя вузла, яке відображається на сторінках CGI."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:274
 msgid "The log file to use. File name, relative to log directory."
-msgstr "Файл журналу для використання. Ім'я файлу відносно каталогу журналу."
+msgstr "Файл журналу для використання. Імʼя файлу відносно каталогу журналу."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:788
 msgid "The order in which client headers are sorted before forwarding them."
@@ -529,7 +529,7 @@ msgid ""
 "Through which SOCKS proxy (and optionally to which parent HTTP proxy) "
 "specific requests should be routed."
 msgstr ""
-"Через який проксі-сервер SOCKS (і, необов’язково, до якого батьківського "
+"Через який проксі-сервер SOCKS (і, необовʼязково, до якого батьківського "
 "проксі-сервера HTTP) слід направляти конкретні запити."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:610
@@ -571,7 +571,7 @@ msgstr "Значення не більше 0 або пусте"
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:537
 msgid "Value range 1 to 4096, no entry defaults to 4096"
-msgstr "Діапазон значень від 1 до 4096, за умовчанням значення 4096 не вказано"
+msgstr "Діапазон значень від 1 до 4096, типове значення — 4096"
 
 #: applications/luci-app-privoxy/luasrc/controller/privoxy.lua:45
 #: applications/luci-app-privoxy/luasrc/controller/privoxy.lua:47
@@ -592,7 +592,7 @@ msgid ""
 "Whether or not Privoxy recognizes special HTTP headers to change toggle "
 "state."
 msgstr ""
-"Чи розпізнає Privoxy спеціальні заголовки HTTP для зміни стану перемикання."
+"Чи розпізнає Privoxy спеціальні заголовки HTTP для зміни стану перемикача."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:762
 msgid "Whether or not buffered content is compressed before delivery."
@@ -603,8 +603,8 @@ msgid ""
 "Whether or not outgoing connections that have been kept alive should be "
 "shared between different incoming connections."
 msgstr ""
-"Чи повинні вихідні з’єднання, які підтримувалися, ділитися між різними "
-"вхідними з’єднаннями."
+"Чи мають вихідні підключення, що підтримуються активними, спільно "
+"використовуватися різними вхідними підключеннями."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:687
 msgid "Whether or not pipelined requests should be served."
@@ -612,15 +612,15 @@ msgstr "Чи слід обслуговувати конвеєрні запити
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:600
 msgid "Whether or not proxy authentication through Privoxy should work."
-msgstr "Чи повинна працювати автентифікація проксі через Privoxy."
+msgstr "Чи має працювати автентифікація проксі через Privoxy."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:582
 msgid "Whether or not the web-based actions file editor may be used."
-msgstr "Чи можна використовувати веб-редактор файлів дій."
+msgstr "Чи можна використовувати вебредактор файлів дій."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:565
 msgid "Whether or not the web-based toggle feature may be used."
-msgstr "Чи можна використовувати веб-функцію перемикання."
+msgstr "Чи можна використовувати вебфункцію перемикання."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:657
 msgid "Whether requests to Privoxy's CGI pages can be blocked or redirected."
@@ -629,8 +629,7 @@ msgstr "Чи можна блокувати або перенаправляти �
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:664
 msgid ""
 "Whether the CGI interface should stay compatible with broken HTTP clients."
-msgstr ""
-"Чи повинен інтерфейс CGI залишатися сумісним із несправними клієнтами HTTP."
+msgstr "Чи має інтерфейс CGI залишатися сумісним зі зламаними HTTP-клієнтами."
 
 #: applications/luci-app-privoxy/luasrc/model/cbi/privoxy.lua:798
 msgid "Whether to run only one server thread."

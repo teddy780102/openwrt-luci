@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-10-27 15:04+0000\n"
+"PO-Revision-Date: 2026-09-07 04:02+0000\n"
 "Last-Translator: SnIPeRSnIPeR "
 "<snipersniper@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:214
 msgid "Add new proxy..."
@@ -85,11 +85,10 @@ msgid ""
 "resources from. If this value is \"\", assets will be loaded from the "
 "bundled executable using statik.<br />By default, this value is \"\"."
 msgstr ""
-"AssetsDir указывает локальную директорию, из которой сервер "
-"администрирования будет загружать ресурсы. Если это значение равно \"\", то "
-"ресурсы будут загружаться из исполняемого файла fprc с помощью statik "
-"(библиотека на Go для встраивания ресурсов).<br />По умолчанию это значение "
-"равно \"\"."
+"AssetsDir указывает локальный каталог, из которого сервер администрирования "
+"будет загружать ресурсы. Если это значение равно \"\", то ресурсы будут "
+"загружаться из исполняемого файла fprc с помощью statik (библиотека на Go "
+"для встраивания ресурсов).<br />По умолчанию это значение равно \"\"."
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:190
 msgid "Collecting data ..."
@@ -141,7 +140,7 @@ msgstr "Основные настройки"
 
 #: applications/luci-app-frpc/root/usr/share/rpcd/acl.d/luci-app-frpc.json:3
 msgid "Grant access to LuCI app frpc"
-msgstr "Предоставить доступ LuCI к приложению frpc"
+msgstr "Предоставить доступ к LuCI-приложению frpc"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:219
 msgid "HTTP Settings"
@@ -210,7 +209,7 @@ msgstr "Если remote_port равен 0, frps выберет для вас с�
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:48
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:224
 msgid "Local IP"
-msgstr "Локальный IP-адрес"
+msgstr "Локальный IP"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:49
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:225
@@ -351,7 +350,7 @@ msgstr ""
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:163
 msgid "RUNNING"
-msgstr "ЗАПУЩЕН"
+msgstr "ЗАПУЩЕНО"
 
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:53
 #: applications/luci-app-frpc/htdocs/luci-static/resources/view/frpc.js:226

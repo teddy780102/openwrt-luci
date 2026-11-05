@@ -4,8 +4,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-04-24 18:43+0000\n"
-"Last-Translator: try496 <pinghejk@gmail.com>\n"
+"PO-Revision-Date: 2026-08-31 06:44+0000\n"
+"Last-Translator: Hosted Weblate user 54392 "
+"<hamburger2048@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationswatchcat/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -13,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:94
 msgid ""
@@ -33,8 +34,8 @@ msgid ""
 "ModemManager, you can have Watchcat restart your ModemManager interface by "
 "specifying its name."
 msgstr ""
-"<i>应用于 Ping 重启 和 重启接口 模式</i> <br />如果使用 ModemManager，你可以"
-"通过指定名称让 Watchcat 重新启动你的 ModemManager 接口。"
+"<i>应用于 Ping 重启 和 重启接口 模式</i> <br />如果使用 ModemManager，可以通"
+"过指定名称让 Watchcat 重启 ModemManager 接口。"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:104
 msgid ""
@@ -66,7 +67,7 @@ msgstr "强制重启延迟"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:19
 msgid "General Settings"
-msgstr "常规设置"
+msgstr "通用设置"
 
 #: applications/luci-app-watchcat/root/usr/share/rpcd/acl.d/luci-app-watchcat.json:3
 msgid "Grant access to LuCI app watchcat"
@@ -146,7 +147,7 @@ msgstr "要监视和/或重启的接口"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:86
 msgid "Jumbo: 9000 bytes"
-msgstr "巨无霸：9000 字节"
+msgstr "巨型帧：9000 字节"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:22
 msgid "Mode"
@@ -229,4 +230,4 @@ msgstr "Watchcat"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:82
 msgid "Windows: 32 bytes"
-msgstr "Windows：32 字节"
+msgstr "Windows 标准：32 字节"
